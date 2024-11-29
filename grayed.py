@@ -31,8 +31,8 @@ def parse(svg):
     return svg
 
 
-with open("Documents/Odoo/dess/flamegraph/flamegraph_20241118_0045.svg", 'r') as f:
+with open("/path/to/profile.svg", 'r') as f:
     s = f.read()
 
-with open("flamegraph_20241118_0045.svg", 'w') as f:
+with open("/path/to/gray_profile.svg", 'w') as f:
     f.write(parse(s))
